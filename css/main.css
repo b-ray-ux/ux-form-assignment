@@ -1,2 +1,96 @@
 
 /*  Put your CSS Here */
+
+body {  
+    background-color: black;  
+    background-image:url('/images/bg-heading-03.jpg');
+    display: flex;
+    height: 100vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+  
+}
+
+* {
+    box-sizing: border-box;
+}
+ h1 {
+     color: #ccc;
+     font-family: 'poppins';
+     font-size: 40px;
+     position: absolute;
+     right: 300px;
+     top: 40px;
+ }
+
+ .contact-form {
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 400px;
+     margin: 80px auto;
+     position: absolute;
+     right: 300px;
+ }
+ .contact-form label {
+     margin-bottom: 60px;
+ }
+ ::placeholder {
+    font-family: 'poppins';
+    font-size: 30px;
+    color: #ccc;
+    opacity: 1;
+    
+ }
+ .contact-form input {
+     height: 40px;
+     padding: 2.5px 5px;
+     background-color: black;
+     border-bottom: 1px solid white;
+     border-top: 0;
+     border-left: 0;
+     border-right: 0;
+     
+ }
+ .contact-form input:focus {
+     outline: none;
+ }
+ .contact-form_first,.contact-form_date,
+ .contact-form_experience,.contact-form_email,
+ .contact-form_phone {
+     display: flex;
+     flex-direction: column;
+     padding: 15px 15px 20px 15px;
+ }
+ 
+ .contact-form_first {
+     width: 50%;
+ }
+ .contact-form_date, .contact-form_experience,
+ .contact-form_email,.contact-form_phone,
+ .contact-form_btn {
+     width: 100%;
+ }
+ .contact-form_btn {
+    align-items: flex-end;
+ }
+ 
+ button { 
+    max-width: 200px;
+    margin: 30px;
+    padding: 20px;
+    background-color:rgba(152, 245, 12, 0.851);
+    color: white;
+    position: relative;
+    left: 130px;
+    font-family: 'ariel';
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 2em;
+ }
+
+ @media (min-width: 700px) {
+     body {
+        flex-direction: column;
+     }
+ }
